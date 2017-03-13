@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstaceState) {
+        super.onSaveInstanceState(savedInstaceState);
         teamAscore = savedInstaceState.getInt("teamAscore");
         teamBscore = savedInstaceState.getInt("teamBscore");
         displayScoreOnRotate();
