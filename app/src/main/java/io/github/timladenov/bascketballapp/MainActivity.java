@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle savedInstanceStace) {
         savedInstanceStace.putInt("teamAscore", teamAscore);
         savedInstanceStace.putInt("teamBscore", teamBscore);
+        super.onSaveInstanceState(savedInstanceStace);
     }
 
     public void clickedButton(View view) {
