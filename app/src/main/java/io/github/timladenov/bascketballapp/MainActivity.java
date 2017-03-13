@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 teamAscore = teamBscore = 0;
                 returnResult(teamAscore, results, resultA);
                 returnResult(teamBscore, results, resultB);
+                break;
         }
     }
 
