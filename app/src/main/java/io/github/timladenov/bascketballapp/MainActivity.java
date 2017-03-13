@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         teamAscore = savedInstaceState.getInt("teamAscore");
         teamBscore = savedInstaceState.getInt("teamBscore");
         displayScoreOnRotate();
-
     }
 
     public void clickedButton(View view) {
