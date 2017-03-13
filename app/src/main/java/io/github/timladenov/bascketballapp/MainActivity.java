@@ -13,19 +13,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (savedInstanceState != null) {
+        /*if (savedInstanceState != null) {
             teamAscore = savedInstanceState.getInt("teamAscore");
             teamBscore = savedInstanceState.getInt("teamBscore");
-        }
+        }*/
         setContentView(R.layout.activity_main);
-        displayScoreOnRotate();
+        //displayScoreOnRotate();
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle savedInstanceStace) {
-        savedInstanceStace.putInt("teamAscore", teamAscore);
-        savedInstanceStace.putInt("teamBscore", teamBscore);
-        super.onSaveInstanceState(savedInstanceStace);
+    protected void onSaveInstanceState(Bundle savedInstaceState) {
+        savedInstaceState.putInt("teamAscore", teamAscore);
+        savedInstaceState.putInt("teamBscore", teamBscore);
+        super.onSaveInstanceState(savedInstaceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstaceState) {
+        teamAscore = savedInstaceState.getInt("teamAscore");
+        teamBscore = savedInstaceState.getInt("teamBscore");
+        displayScoreOnRotate();
+
     }
 
     public void clickedButton(View view) {
