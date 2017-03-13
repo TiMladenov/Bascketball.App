@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="teamNameTxtSize">30sp</dimen>
+    <dimen name="marginTop">24dp</dimen>
+    <dimen name="marginBottom">28dp</dimen>
+    <dimen name="mainMarginStart">40dp</dimen>
+    <dimen name="mainMarginEnd">40dp</dimen>
+    <dimen name="textSize">17sp</dimen>
+    <dimen name="buttonTxtSize">14sp</dimen>
+    <dimen name="buttonWidth">120dp</dimen>
+    <dimen name="drawLineDimen">3dp</dimen>
+    <dimen name="drawLineYdimen">0dp</dimen>
+    <dimen name="sideMargin">5dp</dimen>
+    <item name="alphaVal" format="float" type="dimen">0.8</item>
+    <item name="rotationVal" format="float" type="dimen">90</item>
+</resources>

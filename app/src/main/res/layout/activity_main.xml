@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="io.github.timladenov.bascketballapp.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/basketball3" />
+
+    <ScrollView
+        android:id="@+id/activity_main1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+        <RelativeLayout
+            android:id="@+id/activity_main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/mmiddleSpacer"
+                android:layout_width="@dimen/drawLineYdimen"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/left_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/mmiddleSpacer"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/sideMargin"
+                    android:layout_marginStart="@dimen/sideMargin"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:alpha="@dimen/alphaVal"
+                    android:background="@color/teamTxtBkgrnd"
+                    android:text="@string/TeamA"
+                    android:textAlignment="center"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/teamNameTxtSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resultTeamA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/sideMargin"
+                    android:layout_marginStart="@dimen/sideMargin"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:alpha="@dimen/alphaVal"
+                    android:background="@color/teamTxtBkgrnd"
+                    android:text="@string/resTeamA"
+                    android:textAlignment="center"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/teamA3p"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:onClick="clickedButton"
+                    android:text="@string/points3"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/buttonTxtSize"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/teamA2p"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:onClick="clickedButton"
+                    android:text="@string/points2"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/buttonTxtSize"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/teamAfreeThrow"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginTop"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:onClick="clickedButton"
+                    android:text="@string/free_throw"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/buttonTxtSize"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bottomLine0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/drawLineDimen"
+                android:layout_centerHorizontal="true"
+                android:background="@color/txtColorBlk"
+                android:rotation="@dimen/rotationVal" />
+
+            <View
+                android:id="@+id/bottomLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/drawLineDimen"
+                android:layout_alignBottom="@id/left_menu"
+                android:layout_centerHorizontal="true"
+                android:background="@color/txtColorBlk"
+                android:rotation="@dimen/rotationVal" />
+
+            <View
+                android:id="@+id/bottomLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/drawLineDimen"
+                android:layout_alignBottom="@id/left_menu"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/txtColorBlk" />
+
+            <LinearLayout
+                android:id="@+id/right_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/marginTop"
+                android:layout_toEndOf="@id/mmiddleSpacer"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/sideMargin"
+                    android:layout_marginStart="@dimen/sideMargin"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:alpha="@dimen/alphaVal"
+                    android:background="@color/teamTxtBkgrnd"
+                    android:text="@string/TeamB"
+                    android:textAlignment="center"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/teamNameTxtSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resultTeamB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/sideMargin"
+                    android:layout_marginStart="@dimen/sideMargin"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:alpha="@dimen/alphaVal"
+                    android:background="@color/teamTxtBkgrnd"
+                    android:text="@string/resTeamB"
+                    android:textAlignment="center"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/teamB3p"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:onClick="clickedButton"
+                    android:text="@string/points3"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/buttonTxtSize"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/teamB2p"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:onClick="clickedButton"
+                    android:text="@string/points2"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/buttonTxtSize"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/teamBfreeThrow"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginTop"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:onClick="clickedButton"
+                    android:text="@string/free_throw"
+                    android:textColor="@color/txtColorBlk"
+                    android:textSize="@dimen/buttonTxtSize"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/txtColorBlk"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/zeroResult"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickedButton"
+            android:text="@string/zeroRes"
+            android:textColor="@color/txtColorBlk"
+            android:textSize="@dimen/buttonTxtSize"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/bottomLine3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/drawLineDimen"
+            android:layout_gravity="bottom"
+            android:background="@color/txtColorBlk" />
+    </LinearLayout>
+
+</RelativeLayout>
