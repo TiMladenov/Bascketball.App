@@ -6,7 +6,7 @@ This is the first data entry / interactive application from the course's Lesson 
 
 [Screenshot 1](http://s293.photobucket.com/user/GringoBG/media/Screenshot_1519507254.png.html) | 
 [Screenshot 2](http://s293.photobucket.com/user/GringoBG/media/Screenshot_1519507267.png.html) | 
-[Screenshot 3](http://s293.photobucket.com/user/GringoBG/media/Screenshot_1519507284.png.html) | 
+[Screenshot 3](http://s293.photobucket.com/user/GringoBG/media/Screenshot_1519507284.png.html) 
 
 Video presentation of Bascketball score keeper app:
 [![ScreenShot](https://i.ytimg.com/vi/NGvHmBLqsuc/maxresdefault.jpg)](https://youtu.be/NGvHmBLqsuc)
